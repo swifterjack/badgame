@@ -12,7 +12,7 @@ function buyFirstgrader(){
         document.getElementById('firstgraders').innerHTML = firstgraders;  //updates the number of cursors for the user
         document.getElementById('tests').innerHTML = tests;  //updates the number of cookies for the user
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
+    var nextCost = Math.floor(10 * Math.pow(1.1,firstgraders));       //works out the cost of the next cursor
     document.getElementById('firstgraderCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
