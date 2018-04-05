@@ -2,8 +2,8 @@ var tests = 0;
 var firstgraderspeed = 1000;
 var firstgraderstestvalue = 1;
 var testclickvalue = 1;
-function testClick(number){
-  tests = tests + number;
+function testClick(){
+  tests = tests + testclickvalue;
   document.getElementById("tests").innerHTML = tests;
 };
 var firstgraders = 0;
