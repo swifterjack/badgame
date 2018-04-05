@@ -1,11 +1,15 @@
 var tests = 0;
+var firstgraderspeed = 1000;
+var firstgraderstestvalue = 1;
+var testclickvalue = 1;
+var 
 function testClick(number){
   tests = tests + number;
   document.getElementById("tests").innerHTML = tests;
 };
 var firstgraders = 0;
 function buyFirstgrader(){
-    var firstgraderCost = Math.floor(10 * Math.pow(1.1,cursors));     //works out the cost of this cursor
+    var firstgraderCost = Math.floor(10 * Math.pow(1.1,firstgraders));     //works out the cost of this cursor
     if(tests >= firstgraderCost){                                   //checks that the player can afford the cursor
         firstgraders = firstgraders + 1;                                   //increases number of cursors
     	tests = tests - firstgradersCost;                          //removes the cookies spent
